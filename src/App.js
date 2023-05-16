@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import FancyCheckbox from "./FancyCheckbox";
+import WelcomeCard from "./WelcomeCard";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>{props.title}</h1>
+        <p>{props.hello}</p>
       </header>
+      <section className="cards">
+        <WelcomeCard name="Ash" message={`${props.hello} Gota catch'em all`} />  {/* <-- Element */}
+        <WelcomeCard name="Liliana" message="Quenn of the dead" />
+        <WelcomeCard name="Superman" message="Secretley Clack Kent" />
+      </section>
+      <FancyCheckbox />
+      <FancyCheckbox />
+      <FancyCheckbox />
+      <FancyCheckbox />
+      <FancyCheckbox />
+      <FancyCheckbox />
+      <FancyCheckbox />
+      <FancyCheckbox />
+      <FancyCheckbox />
+      <FancyCheckbox />
+      <FancyCheckbox />
     </div>
   );
 }

@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(213, 225, 235);
+  gap: 1rem;
+}
+
+.welcome-card {
+  padding: .2rem;
+  color: white;
+  background-color: rgb(62, 98, 228);
+}
